@@ -1,0 +1,50 @@
+body{
+  margin-top: 6rem;
+  margin-bottom: 20rem;
+  overflow-x: hidden;
+}
+
+p{
+  color: white;
+}
+
+.app-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  height: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.App .info{
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+}
+
+.info p{
+  color: gray;
+}
+
+.profile-image{
+  height: 3rem;
+  width: 3rem;
+  background-image: url("https://images.unsplash.com/photo-1648737966900-730a5b2d673e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8rem;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.app-bar > .info > p{
+  position: absolute;
+}
+.app-bar > svg {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+}

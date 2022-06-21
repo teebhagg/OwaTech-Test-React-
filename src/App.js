@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import AppBar from "./Components/AppBar";
+import BottomBar from "./Components/BottomBar";
+import Post from "./Components/Post";
 
 function App() {
+  const img1 = require("./Img/1st.jpg");
+  const img2 = require("./Img/2nd.jpg");
+  const img3 = require("./Img/3rd.jpg");
+
+  const images = [
+    { imgUrl: `${img1}` },
+    { imgUrl: `${img2}` },
+    { imgUrl: `${img3}` },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppBar />
+      {images.map((images) => (
+        <Post images={images.imgUrl} />
+      ))}
+      <BottomBar/>
+    </>
   );
 }
 

@@ -1,0 +1,51 @@
+.post{
+    /* background-color: green; */
+    height: 19rem;
+    min-width: 10rem;
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.push{
+    height: 5.5rem;
+}
+
+.loved{
+    display: flex;
+    background-color: red;
+    width: max-content;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    margin-left: 78%;
+}
+.loved svg{
+    margin-top: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.interaction{
+    display: flex;
+}
+.interaction > div{
+    margin-right: 1rem;
+}
+
+.like, .comment, .share {
+    display: flex;
+    flex-direction: row;
+}
+
+.like svg, .comment svg, .share svg{
+    margin-top: 1.3rem;
+    margin-right: 0.3rem;
+}
+@media only screen and (max-width: 660px) {
+    .post{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

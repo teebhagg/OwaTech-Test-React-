@@ -1,0 +1,41 @@
+.bar{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 2px 60px 100px 2px black;
+}
+
+.slider{
+    background-color: grey;
+    height: 5.5px;
+    width: 10rem;
+    margin: 1.5rem  auto;
+    border-radius: 28px;
+}
+
+.b-bar{
+    display: flex;
+}
+
+.emoji{
+    height: 3rem;
+    width: 3rem;
+    margin: auto 1rem;
+    background-size: cover;
+    border-radius: 5rem;
+}
+
+.info{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.info strong, .info p{
+    margin: 0;
+}
